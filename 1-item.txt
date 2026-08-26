@@ -1,0 +1,34 @@
+First Item: Consider Static Factory Methods Instead of Constructors. 
+
+-> Static factory method: 
+
+=> what is static? 
+
+* The word static ensures that a member belongs to a specific class. 
+* Therefore, only one instance of the member exists regardless of the number of objects of the class created. 
+* A static member is shared amongst all objects. The new keyword is not required. 
+* Such static constant will be stored in dynamic metaspace, in java memory management. 
+
+=> factory method: not the same as the design pattern. 
+* A factory method is a method that is not the constructor, that returns an instance of the class. 
+* It encapsulates the object creation process inside a custom-name method. 
+
+=> what is Flyweight pattern?
+*  
+
+>> first benefit: naming the construction process (printing intent). 
+	constructors (especially if overloaded) can be tricky to remember (params, intent, and so on)
+
+>> second benefit: does not require object creation
+	this also allows for the creation of immutable classes
+
+>> third benefit: allows a class to guarantee a class is a singleton, or non-instantiable.
+	it gives complete control to when instances of the class are created.
+	(method parameters, or other flags, can pass conditions to whether create or not an instance)
+
+>> fourth benefit: the class of the return object can be a subtype of the return class.
+	depending on the input parameters, we can return a specific return subtype. 
+	this favors implementantions before extension. 
+	this also encapsulates the complexity from the client.
+
+>> fifth benefit:

@@ -31,4 +31,6 @@ First Item: Consider Static Factory Methods Instead of Constructors.
 	this favors implementantions before extension. 
 	this also encapsulates the complexity from the client.
 
->> fifth benefit:
+>> fifth benefit: the class of the returned object need not exist when the class containing the 
+	method is written. Maybe due to composition, as a default method can be on the interface 
+	level, and not in any subtype? not sure.

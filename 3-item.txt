@@ -1,0 +1,20 @@
+Enforce a singleton property with a private constructor or an enum type
+
+The idea: define a private constructor to set the unique final static instance. 
+
+Three ways: define a public static final Instance field / define a static factory method. 
+Public static final instance field: 
+
+Pros: its API is clear about being a singleton. It’s also simpler. 
+Public static factory method with private final field
+
+Pros: gives flexibility for changing in the future, without changing the API
+You can make use of a getInstance method (static factory) to define a methref.
+Create a single element Enum: 
+
+Pros: simplest, toughest and most concise. 
+
+Cons: can’t extend a superclass (but can implement an interface)
+
+-> what is the transient keyword? Reserved keyword you can prepend to a variable to indicate to 
+the JVM against serializing the field. It’s an old feature that is unrecommended to use.

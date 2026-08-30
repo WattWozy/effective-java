@@ -1,0 +1,12 @@
+Prefer dependency injection to handwriting resources
+
+-> what is a utility class? Also known as helper class, a utility class’ goal 
+is to provide with stateless, reusable methods. The conventions to defining a 
+utility class are: define the class as final, keep the constructor private (noninstantiable)
+and make all its methods static.
+
+A class is made non-instantiable by making its constructor private.
+A constructor is always generated for a class if not explicitly defined. Thus, defining one and
+making it private is the way. 
+Abstract is not helpful: it can be inherited and used through a subclass.
+Subclasses invoke explicitly or implicitly their parent’s constructor. 

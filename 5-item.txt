@@ -1,0 +1,8 @@
+Avoid creating unnecessary objects
+
+Just a heads-up about performance: consider the alternatives.
+I.E: “String s = new String(“string”);” -> creates a new object.
+I.E: “String s = “string”;” -> creates a reusable object. (JVM will reuse if same string) 
+The constructor always  creates a new object.
+Static factory method will reuse the object if needed. 
+Prefer primitives to boxed primitives.

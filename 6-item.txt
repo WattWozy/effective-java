@@ -1,0 +1,12 @@
+Eliminate obsolete object references
+
+Heads up for unintentional object retention. 
+The chapter highlights how growing and shrinking an array still keeps obsolete references 
+to the objects that have been “erased”. These are not picked by the garbage collector. 
+The following are susceptible of memory leakage (garbage collector indifferent)
+-> Classes that manage their own memory
+-> Caches: storing stuff in a data structure, without a strategy for cleanup (maps, sets...) 
+-> Callback listeners: in pub-sub, having a strategy to clean up subs for a pub.
+
+-> What are weak vs strong references? Weak references are reclaimed by the gc when needed,
+if nothing in your code is using it. 

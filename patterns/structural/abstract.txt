@@ -1,0 +1,23 @@
+one → different-one = Adapter
+You have an object that already works, but its interface doesn’t match what the client expects.
+You wrap it so it looks like the expected interface. Same responsibility, different shape.
+
+more → less = Facade
+You have a complicated subsystem (many classes, many methods).
+You put a simple front door in front of it so the client only has to talk to a few easy methods.
+
+less → more = Decorator
+You start with a simple object and keep wrapping it to add extra behavior,
+one layer at a time, without changing its interface. (So interface holds essential client knowledge/capablities)
+
+Pure one-to-one passthrough with zero change
+Usually pointless (that’s the “stupid” part you mentioned). If you’re not adapting, simplifying,
+or adding anything, there’s no reason for the extra object.
+
+---
+Functional interfaces: interfaces with only one abstract method, that can be represented by a lambda or a method reference
+If the return type and the parameter types and count match, then you don't even need a name (anonymous function=lambda)
+
+You pass the functional interface as the type, then Java understands the encapsulation you want to allow, and the lambda then
+qualifies (if it matches).
+So, interfaces then can provide a way to define a function as a type. (sth that takes in a & b and returns c)

@@ -1,3 +1,4 @@
+package patterns.structural.strategy;
 
 public class Select{
 

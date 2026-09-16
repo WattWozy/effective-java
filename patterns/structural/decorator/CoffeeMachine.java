@@ -1,3 +1,4 @@
+package patterns.structural.decorator;
 
 public interface CoffeeMachine{
 

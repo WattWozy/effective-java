@@ -1,3 +1,4 @@
+package patterns.structural.adapter;
 
 public class USPlug {
     private final int maxVolt;

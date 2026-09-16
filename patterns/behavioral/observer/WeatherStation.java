@@ -1,8 +1,10 @@
+package patterns.behavioral.observer;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.lang.Math;
 
-class WeatherStation implements Subject{
+class WeatherStation implements Subject {
 
     private String name;
     private List<Observer> observerList;

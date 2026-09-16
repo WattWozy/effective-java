@@ -1,4 +1,4 @@
-
+package patterns.structural.adapter;
 
 public class UStoEUadapter implements EUCompatibleAdapter {
 

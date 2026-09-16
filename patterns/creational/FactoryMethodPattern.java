@@ -1,3 +1,4 @@
+package patterns.creational;
 
 //the whole idea of building with factory patterns: hiding creational detail when unnecessary.
 //encapsulating implementation details that client is not interested about.
@@ -10,7 +11,7 @@ public class FactoryMethodPattern{
         Car myNewBMW = Car.newDefaultBMW("1234abe");
     }
 
-    public class Car{
+    public static class Car{
         private final String color;
         private final String plate;
         private final String brand;

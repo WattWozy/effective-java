@@ -1,3 +1,4 @@
+package patterns.structural.adapter;
 
 interface EUCompatibleAdapter{
     public boolean plugToGrid();

@@ -1,3 +1,5 @@
+package patterns.creational;
+
 //also using Java's enum object, or @Singleton in runtime (spring)
 
 public class SingletonPattern{
@@ -13,13 +15,13 @@ public class SingletonPattern{
 
     public static class OrderTracker{
 
-        private static final OrderTracker INSTANCE;
+        private static OrderTracker INSTANCE;
 
         private OrderTracker(){/*handle, bind, read... whatever*/}
 
-        public getInstance(){
+        public static OrderTracker getInstance(){
             if(INSTANCE!=null){
-                return this;
+                return INSTANCE;
             }
             else{
                 return new OrderTracker();
@@ -37,7 +39,7 @@ public class SingletonPattern{
 
         private String trackerKey;
 
-        OrderTracker() {
+        void OrderTracker() {
             this.trackerKey = "DEFAULT_KEY";
         }
 

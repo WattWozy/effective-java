@@ -1,4 +1,4 @@
-
+package patterns.creational;
 
 public class BuilderPattern {
 
@@ -6,7 +6,7 @@ public class BuilderPattern {
         //TELESCOPING BRUTE CONSTRUCTOR: Car newCar = new Car("", "", "", "" ...);
         //FACTORY METHOD: Car myGreenToyota = Car.greenToyotaBuilder();
         //BUILDER PATTERN:
-        Car myCustomCar = Car.Builder
+        Car myCustomCar = new Car.Builder()
                 .color("Green")
                 .plate("1234abc")
                 .brand("Toyota")

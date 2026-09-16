@@ -1,3 +1,4 @@
+package patterns.structural.decorator;
 
 class DecoratedDecorator implements CoffeeMachine {
 

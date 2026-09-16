@@ -1,3 +1,5 @@
+package patterns.structural.strategy;
+
 import java.util.List;
 
 public class Inject {

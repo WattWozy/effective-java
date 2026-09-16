@@ -1,3 +1,4 @@
+package patterns.structural.strategy;
 
 //functional interface Mathstrategy has 1 abstract method declared (representable by a lambda)
 

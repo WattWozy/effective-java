@@ -1,3 +1,4 @@
+package patterns.creational;
 
 public class AbstractFactoryPattern{
 
@@ -5,7 +6,7 @@ public class AbstractFactoryPattern{
 
     }
 
-    class CarFactory{
+    static class CarFactory{
         private final String company;
         private final String continent;
         private final String country;
@@ -26,9 +27,9 @@ public class AbstractFactoryPattern{
 
         //methods:
         //european deafult tesla
-        public Car newDefaultCar(){
+        public FactoryMethodPattern.Car newDefaultCar(){
             String newPlate = generatePlate(country, "abc1234");
-            return carFactoryPattern.newDefaultTesla(newPlate);
+            return FactoryMethodPattern.Car.newDefaultTesla(newPlate);
         }
 
         /*

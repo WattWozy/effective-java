@@ -1,3 +1,4 @@
+package patterns.behavioral.observer;
 
 public interface Subject{
     void subscribe(Observer observer);

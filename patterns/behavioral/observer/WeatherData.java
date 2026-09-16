@@ -1,3 +1,4 @@
+package patterns.behavioral.observer;
 
 public record WeatherData(
         int temperature,

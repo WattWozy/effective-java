@@ -16,7 +16,7 @@ public class StrategyBalancer implements Balance {
     public Application route(List<Application> instances){
         //we are accepting Application list, not restricting to SmartApplications...
 
-        return instances.getFirst();
+        return routeStrategy.route(instances);
     }
 
     @Override

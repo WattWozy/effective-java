@@ -42,10 +42,7 @@ public class TolerantBalancer implements Balance {
 
     //modifying the services that the balancer holds
     public void addInstance(Application app){
-        if(instances.contains(app)){
-            return;
-        }
-        else{
+        if(!instances.contains(app)){
             this.instances.add(app);
         }
     }

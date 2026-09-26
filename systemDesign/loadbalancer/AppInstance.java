@@ -1,6 +1,8 @@
-package systemDesign.loadbalancer;
+package systemDesign.loadbalancer.instances;
 
-public class AppInstance implements Application{
+import systemDesign.loadbalancer.Application;
+
+public non-sealed class AppInstance implements Application {
 
     private final String name;
     private boolean health;

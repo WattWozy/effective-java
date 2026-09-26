@@ -1,6 +1,8 @@
-package systemDesign.loadbalancer;
+package systemDesign.loadbalancer.instances;
 
-public class SmartAppInstance extends AppInstance implements SmartApplication{
+import systemDesign.loadbalancer.SmartApplication;
+
+public class SmartAppInstance extends AppInstance implements SmartApplication {
 
     private int connections;
     private final int weight;
